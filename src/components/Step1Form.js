@@ -10,6 +10,7 @@ const Step1Form = ({ formData, onInputChange }) => {
           type='text'
           id='projectName'
           value={formData.projectName}
+          placeholder='Enter Project Name'
           onChange={(e) => onInputChange('projectName', e.target.value)}
           className='w-full px-4 py-2 rounded border-gray-300 shadow-sm focus:ring focus:ring-blue-300'
         />
@@ -20,6 +21,7 @@ const Step1Form = ({ formData, onInputChange }) => {
           type='text'
           id='projectDescription'
           value={formData.projectDescription}
+          placeholder='Enter Project Description'
           onChange={(e) => onInputChange('projectDescription', e.target.value)}
           className='w-full px-4 py-2 rounded border-gray-300 shadow-sm focus:ring focus:ring-blue-300'
         />
@@ -29,6 +31,7 @@ const Step1Form = ({ formData, onInputChange }) => {
         <input
           type='text'
           id='client'
+          placeholder='Enter Client Name'
           value={formData.client}
           onChange={(e) => onInputChange('client', e.target.value)}
           className='w-full px-4 py-2 rounded border-gray-300 shadow-sm focus:ring focus:ring-blue-300'
@@ -39,6 +42,7 @@ const Step1Form = ({ formData, onInputChange }) => {
         <input
           type='text'
           id='contractor'
+          placeholder='Enter Contact Person Name'
           value={formData.contractor}
           onChange={(e) => onInputChange('contractor', e.target.value)}
           className='w-full px-4 py-2 rounded border-gray-300 shadow-sm focus:ring focus:ring-blue-300'
